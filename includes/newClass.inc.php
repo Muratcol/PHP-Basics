@@ -11,7 +11,10 @@ class Person {
     public function setName($name, $lastName){
         $this->first = $name;
         $this->last = $lastName;
-        return $this->first." ".$this->last;
+    }
+    
+    public function getName($person) {
+        return $this->first." ".last;
     }
 
     //Constructor

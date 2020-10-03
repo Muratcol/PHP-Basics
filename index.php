@@ -1,4 +1,5 @@
 <?php
+    declare(strict_types = 1);
     // Including automatical loader
     include 'includes/autoloader.inc.php';
     
@@ -15,9 +16,12 @@
 <body>
     <?php
 
-    $person01 = new Person("Murat", "Coly", 24);
-    echo $person01->last;
-    echo $person01->setName("Maho", "Coly");
+    try {
+        $person1->setName(2);
+        echo $person1->getName()
+    } catch{
+
+    }
 
     ?>
 </body>
