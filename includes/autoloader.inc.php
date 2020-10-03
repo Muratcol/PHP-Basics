@@ -5,14 +5,15 @@
     function myAutoLoader($className){
         $path = "classes/";
         $extension = ".class.php";
-        $fullpath = $path.$className.$extension;
-
+        $fullPath = $path.$className.$extension;
+        echo $fullPath;
         //Error Handler
         if (!file_exists($fullPath)){
             return false;
         }
 
-        include_once $fullpath
+        include_once $fullPath;
+    }
 
 
 ?>

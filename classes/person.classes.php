@@ -8,13 +8,13 @@ class Person {
     public $age;
 
     //Function Sample
-    public function setName($name, $lastName){
+    public function setName(string $name, string $lastName){
         $this->first = $name;
         $this->last = $lastName;
     }
     
-    public function getName($person) {
-        return $this->first." ".last;
+    public function getName() {
+        return $this->first." ".$this->last."\n".$this->age;
     }
 
     //Constructor

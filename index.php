@@ -16,12 +16,14 @@
 <body>
     <?php
 
-    try {
-        $person1->setName(2);
-        echo $person1->getName()
-    } catch{
+    $person1 = new Person("Murat", "Coly", 25);
+    // try {
+    //     $person1->setName("MAHMUT", "Coly");
+    //     echo $person1->getName()
+    // } catch(TypeError $e){
+    //     echo "Error!:". $e->getMessage();
+    // }
 
-    }
 
     ?>
 </body>
