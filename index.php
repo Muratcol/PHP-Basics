@@ -16,13 +16,15 @@
 <body>
     <?php
 
-    $person1 = new Person("Murat", "Coly", 25);
-    // try {
-    //     $person1->setName("MAHMUT", "Coly");
-    //     echo $person1->getName()
-    // } catch(TypeError $e){
-    //     echo "Error!:". $e->getMessage();
-    // }
+    $person1 = new Person("Murat2", "Coly", 25);
+
+    try {
+        $person1->setName("MAHMUT", "Coly");
+        echo $person1->getName();
+        // $e is an build in variable for errors.
+    } catch(TypeError $e){
+        echo "Error!:". $e->getMessage();
+    }
 
 
     ?>

@@ -14,12 +14,12 @@ class Person {
     }
     
     public function getName() {
-        return $this->first." ".$this->last."\n".$this->age;
+        return $this->first." ".$this->last." \n ".$this->age;
     }
 
     //Constructor
     public function __construct($name, $lastName, $age) {
-        $this->name = $name;
+        $this->first = $name;
         $this->last = $lastName;
         $this->age = $age;
     }
